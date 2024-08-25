@@ -2,6 +2,55 @@
 ::: tip 每日5道面试题 
 坚持每天都刷5道真实面试题,保持面试感觉
 :::
+
+## 2024/08/25
+
+1. 讲一下什么是闭包？
+
+   > 
+
+2. 讲一下DOM事件级别，是什么事件的冒泡与捕获？
+
+   > 
+
+3. 讲一下浏览器器怎么执行js，什么是事件循环，说说 event loop？
+
+   > 
+
+4. 讲一下输入一个URL网址，到看到页面都经历了什么？
+
+   > 
+
+5. 说出下面代码的打印顺序,讲一下Generator 、Promise 、async await 都有什么不同？
+
+   ```js
+   console.log(1);
+   async function asyncFn (){
+       console.log(2);
+       await console.log(3);
+       console.log(4);
+   }
+   setTimeout(()=>{
+       console.log(5)
+   });
+   const promise = new Promise((resolve,reject)=>{
+       console.log(6);
+       resolve()
+   })
+   promise.then(res=>{
+       console.log(7)
+   })
+   
+   asyncFn();
+   
+   console.log(8);
+   
+   
+   // 1 6 2 3 8 7 4 5
+   ```
+
+   
+
 ## 2024/08/24
 1. 如何实现一个三角形,怎么给这个三角形加阴影,如果这个三角形边要弧度怎么办?
 
@@ -97,7 +146,7 @@
 >      width: 100px;
 >      height: 100px;
 >    }
->       
+>          
 >    ```
 >
 > 3. ```css
